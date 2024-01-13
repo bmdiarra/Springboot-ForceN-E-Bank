@@ -2,16 +2,12 @@ package com.bmdebankforcen.spring.datajpa.controller;
 
 import com.bmdebankforcen.spring.datajpa.dto.CompteDTO;
 
-//package com.ebank.spring.controller;
-
 import com.bmdebankforcen.spring.datajpa.model.Compte;
-import com.bmdebankforcen.spring.datajpa.model.Tutorial;
 import com.bmdebankforcen.spring.datajpa.model.Utilisateur;
 import com.bmdebankforcen.spring.datajpa.repository.CompteRepository;
 import com.bmdebankforcen.spring.datajpa.repository.UtilisateurRepository;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
