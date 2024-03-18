@@ -5,6 +5,8 @@ package com.bmdebankforcen.spring.datajpa.model;
 import jakarta.persistence.*;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 @Entity
 @Table(name = "utilisateurs")
 public class Utilisateur {
@@ -23,6 +25,7 @@ public class Utilisateur {
     private String motDePasse;
 
     @OneToMany(mappedBy = "utilisateur")
+    @JsonBackReference
     private List<Compte> comptes;
 
     public Utilisateur() {

@@ -3,7 +3,7 @@ package com.bmdebankforcen.spring.datajpa.model;
 import jakarta.persistence.*;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name = "comptes")
@@ -21,7 +21,6 @@ public class Compte {
 
     @ManyToOne
     @JoinColumn(name = "utilisateur_id", nullable = false)
-    @JsonBackReference
     private Utilisateur utilisateur;
 
     @OneToMany(mappedBy = "compte")
